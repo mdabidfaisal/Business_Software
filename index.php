@@ -501,59 +501,76 @@
             <div class="container text-center p-3">
                 <div class="row">
                     <div class="col">
-                    <button class="btn top-bg" type="button">
-                        <p class="text-center font-monospace fw-bold fs-3">Purchase Amount</p>
-                        <p class="text-center font-monospace fw-bold fs-3">0&#2547</p>
-                    </button>
+                        <button class="btn top-bg" type="button">
+                            <p class="text-center font-monospace fw-bold fs-3">Purchase Amount</p>
+                            <p class="text-center font-monospace fw-bold fs-3">0&#2547</p>
+                        </button>
                     </div>
                     <div class="col">
-                    <button class="btn top-bg" type="button">
-                        <p class="text-center font-monospace fw-bold fs-3">Sales Amount</p>
-                        <p class="text-center font-monospace fw-bold fs-3">0&#2547</p>
-                    </button>
+                        <button class="btn top-bg" type="button">
+                            <p class="text-center font-monospace fw-bold fs-3">Sales Amount</p>
+                            <p class="text-center font-monospace fw-bold fs-3">0&#2547</p>
+                        </button>
                     </div>
                     <div class="col">
-                    <button class="btn top-bg" type="button">
-                        <p class="text-center font-monospace fw-bold fs-3">Customer Due</p>
-                        <p class="text-center font-monospace fw-bold fs-3">0&#2547</p>
-                    </button>
+                        <button class="btn top-bg" type="button">
+                            <p class="text-center font-monospace fw-bold fs-3">Customer Due</p>
+                            <p class="text-center font-monospace fw-bold fs-3">0&#2547</p>
+                        </button>
                     </div>
                     <div class="col">
-                    <button class="btn top-bg" type="button">
-                        <p class="text-center font-monospace fw-bold fs-3">Invoice Receive</p>
-                        <p class="text-center font-monospace fw-bold fs-3">0&#2547</p>
-                    </button>
+                        <button class="btn top-bg" type="button">
+                            <p class="text-center font-monospace fw-bold fs-3">Invoice Receive</p>
+                            <p class="text-center font-monospace fw-bold fs-3">0&#2547</p>
+                        </button>
                     </div>
                 </div>
             </div>
             <div class="container text-center p-3">
                 <div class="row">
                     <div class="col">
-                    <button class="btn top-bg" type="button">
-                        <p class="text-center font-monospace fw-bold fs-3">Purchase Amount</p>
-                        <p class="text-center font-monospace fw-bold fs-3">0&#2547</p>
-                    </button>
+                        <button class="btn top-bg" type="button">
+                            <p class="text-center font-monospace fw-bold fs-3">Supplier Payment</p>
+                            <p class="text-center font-monospace fw-bold fs-3">0&#2547</p>
+                        </button>
                     </div>
                     <div class="col">
-                    <button class="btn top-bg" type="button">
-                        <p class="text-center font-monospace fw-bold fs-3">Sales Amount</p>
-                        <p class="text-center font-monospace fw-bold fs-3">0&#2547</p>
-                    </button>
+                        <button class="btn top-bg" type="button">
+                            <p class="text-center font-monospace fw-bold fs-3">Bank Debit</p>
+                            <p class="text-center font-monospace fw-bold fs-3">0&#2547</p>
+                        </button>
                     </div>
                     <div class="col">
-                    <button class="btn top-bg" type="button">
-                        <p class="text-center font-monospace fw-bold fs-3">Customer Due</p>
-                        <p class="text-center font-monospace fw-bold fs-3">0&#2547</p>
-                    </button>
+                        <button class="btn top-bg" type="button">
+                            <p class="text-center font-monospace fw-bold fs-3">Payment Receive</p>
+                            <p class="text-center font-monospace fw-bold fs-3">0&#2547</p>
+                        </button>
                     </div>
                     <div class="col">
-                    <button class="btn top-bg" type="button">
-                        <p class="text-center font-monospace fw-bold fs-3">Invoice Receive</p>
-                        <p class="text-center font-monospace fw-bold fs-3">0&#2547</p>
-                    </button>
+                        <button class="btn top-bg" type="button">
+                            <p class="text-center font-monospace fw-bold fs-3">Bank Credit</p>
+                            <p class="text-center font-monospace fw-bold fs-3">0&#2547</p>
+                        </button>
                     </div>
                 </div>
             </div>
+            <div class="container text-center p-3">
+                <div class="row">
+                    <div class="col">
+                        <button class="btn top-bg" type="button">
+                            <p class="text-center font-monospace fw-bold fs-3">Expenditure</p>
+                            <p class="text-center font-monospace fw-bold fs-3">0&#2547</p>
+                        </button>
+                    </div>
+                    <div class="col">
+                        <button class="btn top-bg" type="button">
+                            <p class="text-center font-monospace fw-bold fs-3">Earning</p>
+                            <p class="text-center font-monospace fw-bold fs-3">0&#2547</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
         </div>
         <!-- Main Body End -->
     </div>
