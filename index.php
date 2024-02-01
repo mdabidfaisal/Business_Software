@@ -529,7 +529,7 @@
             <div class="container text-center p-3">
                 <div class="row">
                     <div class="col">
-                        <button class="btn top-bg type="button">
+                        <button class="btn top-bg"  type="button">
                             <p class="text-center font-monospace fw-bold fs-3">Supplier Payment</p>
                             <p class="text-center font-monospace fw-bold fs-3">0&#2547</p>
                         </button>
