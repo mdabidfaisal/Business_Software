@@ -449,6 +449,7 @@
                 </a>
             </div>
         </aside>
+        <!-- Main Body Start -->
         <div class="main">
             <nav class="navbar bg-warning justify-content-end p-3 fs-5 font-monospace ">
                 <li class="nav-item dropdown">
@@ -457,7 +458,9 @@
                         <img src="images/1.png" alt="Logo" width="50" height="35" class="d-inline-block align-text-top">
                     </a>
                     <ul class="dropdown-menu">
-                        <li><p class="text-center font-monospace">User Name</p></li>
+                        <li>
+                            <p class="text-center font-monospace">User Name</p>
+                        </li>
                         <li><a class="dropdown-item" href="#">Make User</a></li>
                         <li><a class="dropdown-item" href="#">All User</a></li>
                         <li>
@@ -467,9 +470,95 @@
                     </ul>
                 </li>
             </nav>
-        </div>
+            <!-- Shortcut Button Start -->
+            <div class="container-fluid ">
+                <div class="d-grid gap-2 d-md-flex justify-content-md-center p-3">
+                    <button class="btn btn-primary" type="button">
+                        <a href="#" class="text-white">Purchase Menu</a>
+                    </button>
+                    <button class="btn btn-primary" type="button">
+                        <a href="#" class="text-white">Supplier Payment</a>
+                    </button>
+                    <button class="btn btn-primary" type="button">
+                        <a href="#" class="text-white">Stock Menu</a>
+                    </button>
+                    <button class="btn btn-primary" type="button">
+                        <a href="#" class="text-white">Sales Menu</a>
+                    </button>
+                    <button class="btn btn-primary" type="button">
+                        <a href="#" class="text-white">Customer Collection</a>
+                    </button>
+                    <button class="btn btn-primary" type="button">
+                        <a href="#" class="text-white">Expenditure</a>
+                    </button>
+                    <button class="btn btn-primary" type="button">
+                        <a href="#" class="text-white">Daily Sheet</a>
+                    </button>
 
+                </div>
+            </div>
+            <!-- shortcut button end -->
+            <div class="container text-center p-3">
+                <div class="row">
+                    <div class="col">
+                    <button class="btn top-bg" type="button">
+                        <p class="text-center font-monospace fw-bold fs-3">Purchase Amount</p>
+                        <p class="text-center font-monospace fw-bold fs-3">0&#2547</p>
+                    </button>
+                    </div>
+                    <div class="col">
+                    <button class="btn top-bg" type="button">
+                        <p class="text-center font-monospace fw-bold fs-3">Sales Amount</p>
+                        <p class="text-center font-monospace fw-bold fs-3">0&#2547</p>
+                    </button>
+                    </div>
+                    <div class="col">
+                    <button class="btn top-bg" type="button">
+                        <p class="text-center font-monospace fw-bold fs-3">Customer Due</p>
+                        <p class="text-center font-monospace fw-bold fs-3">0&#2547</p>
+                    </button>
+                    </div>
+                    <div class="col">
+                    <button class="btn top-bg" type="button">
+                        <p class="text-center font-monospace fw-bold fs-3">Invoice Receive</p>
+                        <p class="text-center font-monospace fw-bold fs-3">0&#2547</p>
+                    </button>
+                    </div>
+                </div>
+            </div>
+            <div class="container text-center p-3">
+                <div class="row">
+                    <div class="col">
+                    <button class="btn top-bg" type="button">
+                        <p class="text-center font-monospace fw-bold fs-3">Purchase Amount</p>
+                        <p class="text-center font-monospace fw-bold fs-3">0&#2547</p>
+                    </button>
+                    </div>
+                    <div class="col">
+                    <button class="btn top-bg" type="button">
+                        <p class="text-center font-monospace fw-bold fs-3">Sales Amount</p>
+                        <p class="text-center font-monospace fw-bold fs-3">0&#2547</p>
+                    </button>
+                    </div>
+                    <div class="col">
+                    <button class="btn top-bg" type="button">
+                        <p class="text-center font-monospace fw-bold fs-3">Customer Due</p>
+                        <p class="text-center font-monospace fw-bold fs-3">0&#2547</p>
+                    </button>
+                    </div>
+                    <div class="col">
+                    <button class="btn top-bg" type="button">
+                        <p class="text-center font-monospace fw-bold fs-3">Invoice Receive</p>
+                        <p class="text-center font-monospace fw-bold fs-3">0&#2547</p>
+                    </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main Body End -->
     </div>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 </body>
