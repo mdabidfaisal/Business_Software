@@ -141,3 +141,26 @@ a.sidebar-link:hover {
 	transform: rotate(45deg);
 	transition: all .2s ease-out;
 }
+
+.dash-box {
+
+	background: rgb(34, 193, 195);
+	background: linear-gradient(90deg, #FDBB2D 0%, #22C1C3 100%);
+	color: black;
+}
+
+.main-bg {
+	background: rgb(2, 0, 36);
+	background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+.shortcut-bg {
+	background: rgb(63, 94, 251);
+	background: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%);
+	color: black;
+}
+
+.navbar-bg {
+	background: linear-gradient(90deg, #f8ff00 0%, #3ad59f 100%);
+	color: white;
+}
