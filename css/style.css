@@ -145,7 +145,7 @@ a.sidebar-link:hover {
 .dash-box {
 
 	background: rgb(34, 193, 195);
-	background: linear-gradient(90deg, #FDBB2D 0%, #22C1C3 100%);
+	background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
 	color: black;
 }
 
@@ -161,6 +161,6 @@ a.sidebar-link:hover {
 }
 
 .navbar-bg {
-	background: linear-gradient(90deg, #f8ff00 0%, #3ad59f 100%);
+	background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
 	color: white;
 }
