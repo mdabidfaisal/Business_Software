@@ -15,14 +15,20 @@
         background: rgb(2, 0, 36);
         background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
     }
+
+    .navbar-bg {
+        background: rgb(63, 94, 251);
+        background: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%);
+        color: white;
+    }
     </style>
 </head>
 
 <body class="main-bg">
 
-    <div class="container mt-5">
+    <div class="container mt-5  ">
         <div class="row justify-content-center">
-            <div class="col-md-6">
+            <div class="col-md-6 ">
                 <div class="card">
                     <div class="card-header">
                         <p class="text-center font-monospace fs-3 fw-bold">Business Software</p>

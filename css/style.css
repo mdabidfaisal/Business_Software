@@ -161,6 +161,7 @@ a.sidebar-link:hover {
 }
 
 .navbar-bg {
-	background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+	background: rgb(63, 94, 251);
+	background: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%);
 	color: white;
 }
