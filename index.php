@@ -7,11 +7,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Business Software</title>
     <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <style>
-    
+        .dash-box {
+
+            background: rgb(34, 193, 195);
+            background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+            color: black;
+        }
+
+        .main-bg {
+            background: rgb(2, 0, 36);
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+        }
+
+        .shortcut-bg {
+            background: rgb(63, 94, 251);
+            background: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%);
+            color: black;
+        }
+
+        .navbar-bg {
+            background: rgb(63, 94, 251);
+            background: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%);
+            color: white;
+        }
     </style>
 
 </head>
@@ -37,8 +58,7 @@
                 </li>
                 <!-- Category Start -->
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
-                        data-bs-target="#cate" aria-expanded="false" aria-controls="cate">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#cate" aria-expanded="false" aria-controls="cate">
                         <i class="lni lni-list"></i>
                         <span>Category</span>
                     </a>
@@ -54,8 +74,7 @@
                 <!-- Category End -->
                 <!-- Subcategory Start -->
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
-                        data-bs-target="#subc" aria-expanded="false" aria-controls="subc">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#subc" aria-expanded="false" aria-controls="subc">
                         <i class="lni lni-list"></i>
                         <span>Subcategory</span>
                     </a>
@@ -71,8 +90,7 @@
                 <!-- Subcategory End -->
                 <!-- Brand End -->
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
-                        data-bs-target="#brand" aria-expanded="false" aria-controls="brand">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#brand" aria-expanded="false" aria-controls="brand">
                         <i class="lni lni-list"></i>
                         <span>Brand</span>
                     </a>
@@ -88,8 +106,7 @@
                 <!-- Brand End -->
                 <!-- Unit Menu Start -->
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
-                        data-bs-target="#unit" aria-expanded="false" aria-controls="unit">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#unit" aria-expanded="false" aria-controls="unit">
                         <i class="lni lni-calculator"></i>
                         <span>Unit Menu</span>
                     </a>
@@ -105,8 +122,7 @@
                 <!-- Unit Menu End -->
                 <!-- Product Start -->
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
-                        data-bs-target="#product" aria-expanded="false" aria-controls="product">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#product" aria-expanded="false" aria-controls="product">
                         <i class="lni lni-agenda"></i>
                         <span>Product</span>
                     </a>
@@ -122,8 +138,7 @@
                 <!-- Product End -->
                 <!-- Supplier Start -->
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
-                        data-bs-target="#supplier" aria-expanded="false" aria-controls="supplier">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#supplier" aria-expanded="false" aria-controls="supplier">
                         <i class="lni lni-restaurant"></i>
                         <span>Supplier</span>
                     </a>
@@ -145,8 +160,7 @@
                 <!-- Supplier End -->
                 <!-- Customer Start -->
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
-                        data-bs-target="#Customer" aria-expanded="false" aria-controls="Customer">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#Customer" aria-expanded="false" aria-controls="Customer">
                         <i class="lni lni-customer"></i>
                         <span>Customer</span>
                     </a>
@@ -168,8 +182,7 @@
                 <!-- Customer End -->
                 <!-- Payment Reminder Start -->
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
-                        data-bs-target="#pr" aria-expanded="false" aria-controls="pr">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#pr" aria-expanded="false" aria-controls="pr">
                         <i class="lni lni-empty-file"></i>
                         <span>Payment Reminder</span>
                     </a>
@@ -185,8 +198,7 @@
                 <!-- payment Reminder End -->
                 <!-- Purchase Start -->
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
-                        data-bs-target="#Purchase" aria-expanded="false" aria-controls="Purchase">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#Purchase" aria-expanded="false" aria-controls="Purchase">
                         <i class="lni lni-package"></i>
                         <span>Purchase</span>
                     </a>
@@ -225,8 +237,7 @@
                 <!-- Stock End -->
                 <!-- Sale Start -->
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
-                        data-bs-target="#sale" aria-expanded="false" aria-controls="sale">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#sale" aria-expanded="false" aria-controls="sale">
                         <i class="lni lni-wheelbarrow"></i>
                         <span>Sale</span>
                     </a>
@@ -254,8 +265,7 @@
                 <!-- Sale End -->
                 <!-- Cost Start -->
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
-                        data-bs-target="#Cost" aria-expanded="false" aria-controls="Cost">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#Cost" aria-expanded="false" aria-controls="Cost">
                         <i class="lni lni-credit-cards"></i>
                         <span>Cost</span>
                     </a>
@@ -277,8 +287,7 @@
                 <!-- Cost End -->
                 <!-- Due Menu Start -->
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
-                        data-bs-target="#Due" aria-expanded="false" aria-controls="Due">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#Due" aria-expanded="false" aria-controls="Due">
                         <i class="lni lni-money-location"></i>
                         <span>Due Menu</span>
                     </a>
@@ -297,8 +306,7 @@
                 <!-- Due Menu End -->
                 <!-- Bank Menu -->
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
-                        data-bs-target="#Bank" aria-expanded="false" aria-controls="Bank">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#Bank" aria-expanded="false" aria-controls="Bank">
                         <i class="lni lni-dollar"></i>
                         <span>Bank Menu</span>
                     </a>
@@ -326,8 +334,7 @@
                 <!-- Bank Menu End -->
                 <!-- Loan Start -->
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
-                        data-bs-target="#Loan" aria-expanded="false" aria-controls="Loan">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#Loan" aria-expanded="false" aria-controls="Loan">
                         <i class="lni lni-hand"></i>
                         <span>Loan</span>
                     </a>
@@ -352,8 +359,7 @@
                 <!-- Loan End -->
                 <!-- Ledger Start -->
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
-                        data-bs-target="#Ledger" aria-expanded="false" aria-controls="Ledger">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#Ledger" aria-expanded="false" aria-controls="Ledger">
                         <i class="lni lni-library"></i>
                         <span>Ledger</span>
                     </a>
@@ -369,8 +375,7 @@
                 <!-- Ledger End -->
                 <!-- Report Start -->
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
-                        data-bs-target="#Report" aria-expanded="false" aria-controls="Report">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#Report" aria-expanded="false" aria-controls="Report">
                         <i class="lni lni-stats-up"></i>
                         <span>Report</span>
                     </a>
@@ -395,8 +400,7 @@
                 <!-- Report End -->
                 <!-- HR Menu -->
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
-                        data-bs-target="#HR" aria-expanded="false" aria-controls="HR">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#HR" aria-expanded="false" aria-controls="HR">
                         <i class="lni lni-consulting"></i>
                         <span>HR Menu</span>
                     </a>
@@ -438,8 +442,7 @@
                 <!-- User Role End -->
                 <!-- Setting Start -->
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
-                        data-bs-target="#Setting" aria-expanded="false" aria-controls="Setting">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#Setting" aria-expanded="false" aria-controls="Setting">
                         <i class="lni lni-cog"></i>
                         <span>Setting</span>
                     </a>
@@ -467,8 +470,7 @@
         <div class="main main-bg">
             <nav class="navbar navbar-bg justify-content-end p-3 fs-5 font-monospace ">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Business Software
                         <img src="images/1.png" alt="Logo" width="50" height="35" class="d-inline-block align-text-top">
                     </a>
@@ -604,11 +606,10 @@
     </div>
     <!-- Wrapper End -->
 
-  
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
     </script>
     <script src="js/script.js"></script>
 </body>
