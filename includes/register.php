@@ -478,7 +478,7 @@
                         <li>
                             <p class="text-center font-monospace">User Name</p>
                         </li>
-                        <li><a class="dropdown-item" href="includes/register.php">Make User</a></li>
+                        <li><a class="dropdown-item" href="#">Make User</a></li>
                         <li><a class="dropdown-item" href="#">All User</a></li>
                         <li>
                             <hr class="dropdown-divider">
@@ -487,120 +487,7 @@
                     </ul>
                 </li>
             </nav>
-            <!-- Shortcut Button Start -->
-            <div class="container-fluid">
-                <div class="d-grid gap-2 d-md-flex justify-content-md-center p-3">
-                    <button class="btn shortcut-bg btn-inline-light " type="button">
-                        <a href="#" class="text-white">Purchase Menu</a>
-                    </button>
-                    <button class="btn shortcut-bg btn-inline-primary" type="button">
-                        <a href="#" class="text-white">Supplier Payment</a>
-                    </button>
-                    <button class="btn shortcut-bg btn-inline-primary" type="button">
-                        <a href="#" class="text-white">Stock Menu</a>
-                    </button>
-                    <button class="btn shortcut-bg btn-inline-primary" type="button">
-                        <a href="#" class="text-white">Sales Menu</a>
-                    </button>
-                    <button class="btn shortcut-bg btn-inline-primary" type="button">
-                        <a href="#" class="text-white">Customer Collection</a>
-                    </button>
-                    <button class="btn shortcut-bg btn-inline-primary" type="button">
-                        <a href="#" class="text-white">Expenditure</a>
-                    </button>
-                    <button class="btn shortcut-bg btn-inline-primary" type="button">
-                        <a href="#" class="text-white">Daily Sheet</a>
-                    </button>
 
-                </div>
-            </div>
-            <!-- shortcut button end -->
-            <!-- Dash Box Start -->
-            <div class="container">
-                <div class="row row-cols-1 row-cols-md-4 g-4">
-                    <div class="col">
-                        <div class="card">
-                            <button class="btn dash-box btn-outline-primary">
-                                <h5 class="card-title font-monospace fw-bold fs-3">Purchase Amount</h5>
-                                <p class="card-text font-monospace fw-bold fs-3">0&#2547</p>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <button class="btn dash-box btn-outline-primary">
-                                <h5 class="card-title font-monospace fw-bold fs-3">Sales Amount</h5>
-                                <p class="card-text font-monospace fw-bold fs-3">0&#2547</p>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <button class="btn dash-box btn-outline-primary">
-                                <h5 class="card-title font-monospace fw-bold fs-3">Customer Due</h5>
-                                <p class="card-text font-monospace fw-bold fs-3">0&#2547</p>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <button class="btn dash-box btn-outline-primary">
-                                <h5 class="card-title font-monospace fw-bold fs-3">Invoice Receive</h5>
-                                <p class="card-text font-monospace fw-bold fs-3">0&#2547</p>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <button class="btn dash-box btn-outline-primary">
-                                <h5 class="card-title font-monospace fw-bold fs-3">Supplier Payment</h5>
-                                <p class="card-text font-monospace fw-bold fs-3">0&#2547</p>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <button class="btn dash-box btn-outline-primary">
-                                <h5 class="card-title font-monospace fw-bold fs-3">Bank Debit</h5>
-                                <p class="card-text font-monospace fw-bold fs-3">0&#2547</p>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <button class="btn dash-box btn-outline-primary">
-                                <h5 class="card-title font-monospace fw-bold fs-3">Payment Receive</h5>
-                                <p class="card-text font-monospace fw-bold fs-3">0&#2547</p>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <button class="btn dash-box btn-outline-primary">
-                                <h5 class="card-title font-monospace fw-bold fs-3">Bank Credit</h5>
-                                <p class="card-text font-monospace fw-bold fs-3">0&#2547</p>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <button class="btn dash-box btn-outline-primary">
-                                <h5 class="card-title font-monospace fw-bold fs-3">Expenditure</h5>
-                                <p class="card-text font-monospace fw-bold fs-3">0&#2547</p>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <button class="btn dash-box btn-outline-primary">
-                                <h5 class="card-title font-monospace fw-bold fs-3">Earning</h5>
-                                <p class="card-text font-monospace fw-bold fs-3">0&#2547</p>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Dash Box End -->
         </div>
         <!-- Main Body End -->
     </div>
