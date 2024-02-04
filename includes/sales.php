@@ -7,32 +7,197 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Business Software</title>
     <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/register.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <style>
-        .dash-box {
+    /* sidebar start */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-            background: rgb(34, 193, 195);
-            background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
-            color: black;
-        }
+    ::after,
+    ::before {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
 
-        .main-bg {
-            background: rgb(2, 0, 36);
-            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
-        }
+    a {
+        text-decoration: none;
+    }
 
-        .shortcut-bg {
-            background: rgb(63, 94, 251);
-            background: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%);
-            color: black;
-        }
+    li {
+        list-style: none;
+    }
 
-        .navbar-bg {
-            background: rgb(63, 94, 251);
-            background: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%);
-            color: white;
-        }
+    h1 {
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .wrapper {
+        display: flex;
+    }
+
+    .main {
+        min-height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        transition: all 0.35s ease-in-out;
+        background-color: #fafbfe;
+    }
+
+    #sidebar {
+        width: 70px;
+        min-width: 70px;
+        z-index: 1000;
+        transition: all .25s ease-in-out;
+        background-color: #0e2238;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #sidebar.expand {
+        width: 260px;
+        min-width: 260px;
+    }
+
+    .toggle-btn {
+        background-color: transparent;
+        cursor: pointer;
+        border: 0;
+        padding: 1rem 1.5rem;
+    }
+
+    .toggle-btn i {
+        font-size: 1.5rem;
+        color: #FFF;
+    }
+
+    .sidebar-logo {
+        margin: auto 0;
+    }
+
+    .sidebar-logo a {
+        color: #FFF;
+        font-size: 1.15rem;
+        font-weight: 600;
+    }
+
+    #sidebar:not(.expand) .sidebar-logo,
+    #sidebar:not(.expand) a.sidebar-link span {
+        display: none;
+    }
+
+    .sidebar-nav {
+        padding: 2rem 0;
+        flex: 1 1 auto;
+    }
+
+    a.sidebar-link {
+        padding: .625rem 1.625rem;
+        color: #FFF;
+        display: block;
+        font-size: 0.9rem;
+        white-space: nowrap;
+        border-left: 3px solid transparent;
+    }
+
+    .sidebar-link i {
+        font-size: 1.1rem;
+        margin-right: .75rem;
+    }
+
+    a.sidebar-link:hover {
+        background-color: rgba(255, 255, 255, .075);
+        border-left: 3px solid #3b7ddd;
+    }
+
+    .sidebar-item {
+        position: relative;
+    }
+
+    #sidebar:not(.expand) .sidebar-item .sidebar-dropdown {
+        position: absolute;
+        top: 0;
+        left: 70px;
+        background-color: #0e2238;
+        padding: 0;
+        min-width: 15rem;
+        display: none;
+    }
+
+    #sidebar:not(.expand) .sidebar-item:hover .has-dropdown+.sidebar-dropdown {
+        display: block;
+        max-height: 15em;
+        width: 100%;
+        opacity: 1;
+    }
+
+    #sidebar.expand .sidebar-link[data-bs-toggle="collapse"]::after {
+        border: solid;
+        border-width: 0 .075rem .075rem 0;
+        content: "";
+        display: inline-block;
+        padding: 2px;
+        position: absolute;
+        right: 1.5rem;
+        top: 1.4rem;
+        transform: rotate(-135deg);
+        transition: all .2s ease-out;
+    }
+
+    #sidebar.expand .sidebar-link[data-bs-toggle="collapse"].collapsed::after {
+        transform: rotate(45deg);
+        transition: all .2s ease-out;
+    }
+
+    .dash-box {
+
+        background: rgb(34, 193, 195);
+        background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+        color: black;
+    }
+
+    .main-bg {
+        background: rgb(2, 0, 36);
+        background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    }
+
+    .shortcut-bg {
+        background: rgb(63, 94, 251);
+        background: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%);
+        color: black;
+    }
+
+    .navbar-bg {
+        background: rgb(63, 94, 251);
+        background: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%);
+        color: white;
+    }
+
+    .input-group-append {
+        cursor: pointer;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    .calendar-container {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .calendar-container input[type="date"] {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+    }
     </style>
 
 </head>
@@ -46,19 +211,20 @@
                     <i class="lni lni-grid-alt"></i>
                 </button>
                 <div class="sidebar-logo">
-                    <a href="#">Business Software</a>
+                    <a href="index.php">Business Software</a>
                 </div>
             </div>
             <ul class="sidebar-nav">
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link">
+                    <a href="index.php" class="sidebar-link">
                         <i class="lni lni-dashboard"></i>
                         <span>Dashboard</span>
                     </a>
                 </li>
                 <!-- Category Start -->
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#cate" aria-expanded="false" aria-controls="cate">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#cate" aria-expanded="false" aria-controls="cate">
                         <i class="lni lni-list"></i>
                         <span>Category</span>
                     </a>
@@ -74,7 +240,8 @@
                 <!-- Category End -->
                 <!-- Subcategory Start -->
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#subc" aria-expanded="false" aria-controls="subc">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#subc" aria-expanded="false" aria-controls="subc">
                         <i class="lni lni-list"></i>
                         <span>Subcategory</span>
                     </a>
@@ -90,7 +257,8 @@
                 <!-- Subcategory End -->
                 <!-- Brand End -->
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#brand" aria-expanded="false" aria-controls="brand">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#brand" aria-expanded="false" aria-controls="brand">
                         <i class="lni lni-list"></i>
                         <span>Brand</span>
                     </a>
@@ -106,7 +274,8 @@
                 <!-- Brand End -->
                 <!-- Unit Menu Start -->
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#unit" aria-expanded="false" aria-controls="unit">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#unit" aria-expanded="false" aria-controls="unit">
                         <i class="lni lni-calculator"></i>
                         <span>Unit Menu</span>
                     </a>
@@ -122,13 +291,14 @@
                 <!-- Unit Menu End -->
                 <!-- Product Start -->
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#product" aria-expanded="false" aria-controls="product">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#product" aria-expanded="false" aria-controls="product">
                         <i class="lni lni-agenda"></i>
                         <span>Product</span>
                     </a>
                     <ul id="product" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                         <li class="sidebar-item">
-                            <a href="demo.php" class="sidebar-link">Add Product</a>
+                            <a href="#" class="sidebar-link">Add Product</a>
                         </li>
                         <li class="sidebar-item">
                             <a href="#" class="sidebar-link">All Product</a>
@@ -138,7 +308,8 @@
                 <!-- Product End -->
                 <!-- Supplier Start -->
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#supplier" aria-expanded="false" aria-controls="supplier">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#supplier" aria-expanded="false" aria-controls="supplier">
                         <i class="lni lni-restaurant"></i>
                         <span>Supplier</span>
                     </a>
@@ -160,7 +331,8 @@
                 <!-- Supplier End -->
                 <!-- Customer Start -->
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#Customer" aria-expanded="false" aria-controls="Customer">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#Customer" aria-expanded="false" aria-controls="Customer">
                         <i class="lni lni-customer"></i>
                         <span>Customer</span>
                     </a>
@@ -182,7 +354,8 @@
                 <!-- Customer End -->
                 <!-- Payment Reminder Start -->
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#pr" aria-expanded="false" aria-controls="pr">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#pr" aria-expanded="false" aria-controls="pr">
                         <i class="lni lni-empty-file"></i>
                         <span>Payment Reminder</span>
                     </a>
@@ -198,7 +371,8 @@
                 <!-- payment Reminder End -->
                 <!-- Purchase Start -->
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#Purchase" aria-expanded="false" aria-controls="Purchase">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#Purchase" aria-expanded="false" aria-controls="Purchase">
                         <i class="lni lni-package"></i>
                         <span>Purchase</span>
                     </a>
@@ -237,13 +411,14 @@
                 <!-- Stock End -->
                 <!-- Sale Start -->
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#sale" aria-expanded="false" aria-controls="sale">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#sale" aria-expanded="false" aria-controls="sale">
                         <i class="lni lni-wheelbarrow"></i>
                         <span>Sale</span>
                     </a>
                     <ul id="sale" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                         <li class="sidebar-item">
-                            <a href="includes/sales.php" class="sidebar-link">New Sales</a>
+                            <a href="#" class="sidebar-link">New Sales</a>
                         </li>
                         <li class="sidebar-item">
                             <a href="#" class="sidebar-link">All Sale</a>
@@ -265,7 +440,8 @@
                 <!-- Sale End -->
                 <!-- Cost Start -->
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#Cost" aria-expanded="false" aria-controls="Cost">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#Cost" aria-expanded="false" aria-controls="Cost">
                         <i class="lni lni-credit-cards"></i>
                         <span>Cost</span>
                     </a>
@@ -287,7 +463,8 @@
                 <!-- Cost End -->
                 <!-- Due Menu Start -->
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#Due" aria-expanded="false" aria-controls="Due">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#Due" aria-expanded="false" aria-controls="Due">
                         <i class="lni lni-money-location"></i>
                         <span>Due Menu</span>
                     </a>
@@ -306,7 +483,8 @@
                 <!-- Due Menu End -->
                 <!-- Bank Menu -->
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#Bank" aria-expanded="false" aria-controls="Bank">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#Bank" aria-expanded="false" aria-controls="Bank">
                         <i class="lni lni-dollar"></i>
                         <span>Bank Menu</span>
                     </a>
@@ -334,7 +512,8 @@
                 <!-- Bank Menu End -->
                 <!-- Loan Start -->
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#Loan" aria-expanded="false" aria-controls="Loan">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#Loan" aria-expanded="false" aria-controls="Loan">
                         <i class="lni lni-hand"></i>
                         <span>Loan</span>
                     </a>
@@ -359,7 +538,8 @@
                 <!-- Loan End -->
                 <!-- Ledger Start -->
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#Ledger" aria-expanded="false" aria-controls="Ledger">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#Ledger" aria-expanded="false" aria-controls="Ledger">
                         <i class="lni lni-library"></i>
                         <span>Ledger</span>
                     </a>
@@ -375,7 +555,8 @@
                 <!-- Ledger End -->
                 <!-- Report Start -->
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#Report" aria-expanded="false" aria-controls="Report">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#Report" aria-expanded="false" aria-controls="Report">
                         <i class="lni lni-stats-up"></i>
                         <span>Report</span>
                     </a>
@@ -400,7 +581,8 @@
                 <!-- Report End -->
                 <!-- HR Menu -->
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#HR" aria-expanded="false" aria-controls="HR">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#HR" aria-expanded="false" aria-controls="HR">
                         <i class="lni lni-consulting"></i>
                         <span>HR Menu</span>
                     </a>
@@ -442,7 +624,8 @@
                 <!-- User Role End -->
                 <!-- Setting Start -->
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#Setting" aria-expanded="false" aria-controls="Setting">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#Setting" aria-expanded="false" aria-controls="Setting">
                         <i class="lni lni-cog"></i>
                         <span>Setting</span>
                     </a>
@@ -460,7 +643,7 @@
                 </li>
             </ul>
             <div class="sidebar-footer">
-                <a href="includes/login.php" class="sidebar-link">
+                <a href="login.php" class="sidebar-link">
                     <i class="lni lni-exit"></i>
                     <span>Logout</span>
                 </a>
@@ -470,15 +653,16 @@
         <div class="main main-bg">
             <nav class="navbar navbar-bg justify-content-end p-3 fs-5 font-monospace ">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
                         Business Software
-                        <img src="images/1.png" alt="Logo" width="50" height="35" class="d-inline-block align-text-top">
+                        <img src="images\1.png" alt="Logo" width="50" height="35" class="d-inline-block align-text-top">
                     </a>
                     <ul class="dropdown-menu">
                         <li>
                             <p class="text-center font-monospace">User Name</p>
                         </li>
-                        <li><a class="dropdown-item" href="includes/register.php">Make User</a></li>
+                        <li><a class="dropdown-item" href="#">Make User</a></li>
                         <li><a class="dropdown-item" href="#">All User</a></li>
                         <li>
                             <hr class="dropdown-divider">
@@ -487,131 +671,194 @@
                     </ul>
                 </li>
             </nav>
-            <!-- Shortcut Button Start -->
+            <!-- Form Start -->
             <div class="container-fluid">
-                <div class="d-grid gap-2 d-md-flex justify-content-md-center p-3">
-                    <button class="btn shortcut-bg btn-inline-light " type="button">
-                        <a href="#" class="text-white">Purchase Menu</a>
-                    </button>
-                    <button class="btn shortcut-bg btn-inline-primary" type="button">
-                        <a href="#" class="text-white">Supplier Payment</a>
-                    </button>
-                    <button class="btn shortcut-bg btn-inline-primary" type="button">
-                        <a href="#" class="text-white">Stock Menu</a>
-                    </button>
-                    <button class="btn shortcut-bg btn-inline-primary" type="button">
-                        <a href="includes/sales.php" class="text-white">Sales Menu</a>
-                    </button>
-                    <button class="btn shortcut-bg btn-inline-primary" type="button">
-                        <a href="#" class="text-white">Customer Collection</a>
-                    </button>
-                    <button class="btn shortcut-bg btn-inline-primary" type="button">
-                        <a href="#" class="text-white">Expenditure</a>
-                    </button>
-                    <button class="btn shortcut-bg btn-inline-primary" type="button">
-                        <a href="#" class="text-white">Daily Sheet</a>
-                    </button>
+                <p class="text-center font-monospace fs-3 fw-bolder text-light">New Sales</p>
+            </div>
+            <div class="container-fluid">
+                <div class="row new-row-1">
+                    <div class="col-md-3">
+                        <div class="calendar-container">
+                            <form>
+                                <input type="date" id="date" name="date">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-3 pt-3">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Select Category</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3 pt-3">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Select Product</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3 pt-3">
+                        <input class="form-control" type="text" value="Barcode Generator"
+                            aria-label="readonly input example" readonly>
+                    </div>
 
                 </div>
             </div>
-            <!-- shortcut button end -->
-            <!-- Dash Box Start -->
-            <div class="container">
-                <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="container-fluid">
+
+                <table class="table table-bordered bg-light">
+                    <thead>
+                        <tr>
+                            <th scope="col">SL NO</th>
+                            <th scope="col">Product Name</th>
+                            <th scope="col">Stock</th>
+                            <th scope="col">Sale Quantity</th>
+                            <th scope="col">Sales Price</th>
+                            <th scope="col">Price Type</th>
+                            <th scope="col">Dis.(%)</th>
+                            <th scope="col">Discount</th>
+                            <th scope="col">Total</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                        </tr>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="container justify-content-start">
+                <div class="row row-cols-1 row-cols-md-4 g-4 p-3">
                     <div class="col">
-                        <div class="card">
-                            <button class="btn dash-box btn-outline-primary">
-                                <h5 class="card-title font-monospace fw-bold fs-3">Purchase Amount</h5>
-                                <p class="card-text font-monospace fw-bold fs-3">0&#2547</p>
-                            </button>
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput" class="form-label text-white">Full Name</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Full Name">
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card">
-                            <button class="btn dash-box btn-outline-primary">
-                                <h5 class="card-title font-monospace fw-bold fs-3">Sales Amount</h5>
-                                <p class="card-text font-monospace fw-bold fs-3">0&#2547</p>
-                            </button>
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput" class="form-label text-white">Mobile Number</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput"
+                                placeholder="Mobile Number">
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card">
-                            <button class="btn dash-box btn-outline-primary">
-                                <h5 class="card-title font-monospace fw-bold fs-3">Customer Due</h5>
-                                <p class="card-text font-monospace fw-bold fs-3">0&#2547</p>
-                            </button>
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput" class="form-label text-white">Email</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Email">
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card">
-                            <button class="btn dash-box btn-outline-primary">
-                                <h5 class="card-title font-monospace fw-bold fs-3">Invoice Receive</h5>
-                                <p class="card-text font-monospace fw-bold fs-3">0&#2547</p>
-                            </button>
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput" class="form-label text-white">Username</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Username">
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card">
-                            <button class="btn dash-box btn-outline-primary">
-                                <h5 class="card-title font-monospace fw-bold fs-3">Supplier Payment</h5>
-                                <p class="card-text font-monospace fw-bold fs-3">0&#2547</p>
-                            </button>
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput" class="form-label text-white">Password</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Password">
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card">
-                            <button class="btn dash-box btn-outline-primary">
-                                <h5 class="card-title font-monospace fw-bold fs-3">Bank Debit</h5>
-                                <p class="card-text font-monospace fw-bold fs-3">0&#2547</p>
-                            </button>
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput" class="form-label text-white">Confirm Password</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput"
+                                placeholder="Confirm Password">
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card">
-                            <button class="btn dash-box btn-outline-primary">
-                                <h5 class="card-title font-monospace fw-bold fs-3">Payment Receive</h5>
-                                <p class="card-text font-monospace fw-bold fs-3">0&#2547</p>
-                            </button>
-                        </div>
+                        <label for="formGroupExampleInput2" class="form-label text-white">Outlet</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Open this select menu</option>
+                            <option value="1">Showroom One</option>
+                            <option value="2">Showroom Two</option>
+                            <option value="3">Showroom Three</option>
+                        </select>
                     </div>
                     <div class="col">
-                        <div class="card">
-                            <button class="btn dash-box btn-outline-primary">
-                                <h5 class="card-title font-monospace fw-bold fs-3">Bank Credit</h5>
-                                <p class="card-text font-monospace fw-bold fs-3">0&#2547</p>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <button class="btn dash-box btn-outline-primary">
-                                <h5 class="card-title font-monospace fw-bold fs-3">Expenditure</h5>
-                                <p class="card-text font-monospace fw-bold fs-3">0&#2547</p>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <button class="btn dash-box btn-outline-primary">
-                                <h5 class="card-title font-monospace fw-bold fs-3">Earning</h5>
-                                <p class="card-text font-monospace fw-bold fs-3">0&#2547</p>
-                            </button>
-                        </div>
+                        <label for="formGroupExampleInput2" class="form-label text-white">Role Setting</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Open this select menu</option>
+                            <option value="1">Admin</option>
+                            <option value="2">User</option>
+                        </select>
                     </div>
                 </div>
+                <div class="container p-3">
+                    <button type="submit" class="btn btn-primary btn-rounded">Submit</button>
+                </div>
+                <!-- Form End -->
+
             </div>
-            <!-- Dash Box End -->
+            <!-- Main Body End -->
         </div>
-        <!-- Main Body End -->
-    </div>
-    <!-- Wrapper End -->
+        <!-- Wrapper End -->
 
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
-    </script>
-    <script src="js/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+        </script>
+        <script>
+        // Sidebar Start //
+        const hamBurger = document.querySelector(".toggle-btn");
+
+        hamBurger.addEventListener("click", function() {
+            document.querySelector("#sidebar").classList.toggle("expand");
+        });
+        $(document).ready(function() {
+            $('#datepicker').datepicker({
+                format: 'yyyy-mm-dd',
+                autoclose: true
+            });
+        });
+        document.addEventListener("DOMContentLoaded", function() {
+            const datePicker = document.getElementById('date');
+            const today = new Date();
+            const yyyy = today.getFullYear();
+            let mm = today.getMonth() + 1; // January is 0!
+            let dd = today.getDate();
+            if (mm < 10) {
+                mm = '0' + mm;
+            }
+            if (dd < 10) {
+                dd = '0' + dd;
+            }
+            const minDate = yyyy + '-' + mm + '-' + dd; // Minimum date allowed is today
+            datePicker.setAttribute('min', minDate);
+        });
+        </script>
+
+        <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -388,7 +388,7 @@
                     </a>
                     <ul id="sale" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                         <li class="sidebar-item">
-                            <a href="#" class="sidebar-link">New Sales</a>
+                            <a href="sales.php" class="sidebar-link">New Sales</a>
                         </li>
                         <li class="sidebar-item">
                             <a href="#" class="sidebar-link">All Sale</a>
