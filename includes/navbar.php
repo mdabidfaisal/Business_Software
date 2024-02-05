@@ -8,7 +8,7 @@
             <li>
                 <p class="text-center font-monospace">User Name</p>
             </li>
-            <li><a class="dropdown-item" href="includes/register.php">Make User</a></li>
+            <li><a class="dropdown-item" href="../includes/register.php">Make User</a></li>
             <li><a class="dropdown-item" href="#">All User</a></li>
             <li>
                 <hr class="dropdown-divider">
