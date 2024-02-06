@@ -173,7 +173,7 @@
                 </a>
                 <ul id="Purchase" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">New Purchase</a>
+                        <a href="includes/sales.php" class="sidebar-link">New Purchase</a>
                     </li>
                     <li class="sidebar-item">
                         <a href="#" class="sidebar-link">All Purchase</a>
