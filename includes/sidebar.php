@@ -28,7 +28,7 @@
                         <a href="../includes/category_add.php" class="sidebar-link">Add New</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">View All</a>
+                        <a href="../includes/category_view.php" class="sidebar-link">View All</a>
                     </li>
                 </ul>
             </li>
@@ -45,7 +45,7 @@
                         <a href="../includes/subcategory_add.php" class="sidebar-link">Add New</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">View All</a>
+                        <a href="../includes/subcategory_view.php" class="sidebar-link">View All</a>
                     </li>
                 </ul>
             </li>
@@ -62,7 +62,7 @@
                         <a href="../includes/brand_add.php" class="sidebar-link">Add New</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">View All</a>
+                        <a href="../includes/brand_view.php" class="sidebar-link">View All</a>
                     </li>
                 </ul>
             </li>
@@ -132,8 +132,11 @@
                     <span>Customer</span>
                 </a>
                 <ul id="Customer" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Client Type</a>
+                    </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Add Customer</a>
+                        <a href="../includes/customer_add.php" class="sidebar-link">Add Customer</a>
                     </li>
                     <li class="sidebar-item">
                         <a href="#" class="sidebar-link">All Customer</a>
