@@ -79,7 +79,7 @@
                         <a href="../includes/unit_add.php" class="sidebar-link">Add New</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">View All</a>
+                        <a href="unit_view.php" class="sidebar-link">View All</a>
                     </li>
                 </ul>
             </li>

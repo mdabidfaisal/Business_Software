@@ -37,7 +37,7 @@
         <!-- shortcut end -->
         <!-- Form Start -->
         <div class="container-fluid">
-            <p class="text-center font-monospace fs-3 fw-bolder text-light">All Brand</p>
+            <p class="text-center font-monospace fs-3 fw-bolder text-light">All UNIT</p>
         </div>
         <!-- Search start -->
         <?php
@@ -49,8 +49,11 @@
             <table class="table table-bordered bg-light">
                 <thead>
                     <tr>
-                        <th scope="col" class="col-sm-1 text-center ">SL NO</th>
-                        <th scope="col" class="text-center">Brand</th>
+                        <th scope="col" class="col-sm-1 text-center">SL NO</th>
+                        <th scope="col" class="text-center">Unit Name</th>
+                        <th scope="col" class="col-sm-2 text-center">Unit Label</th>
+                        <th scope="col" class="col-sm-2 text-center">Unit Relation</th>
+                        <th scope="col" class="col-sm-2 text-center">Description</th>
                         <th scope="col" class="col-sm-1 text-center">Action</th>
                     </tr>
                 </thead>
@@ -58,6 +61,9 @@
                     <tr>
                         <th scope="col" class="col-sm-1"></th>
                         <th scope="col"></th>
+                        <th scope="col" class="col-sm-2"></th>
+                        <th scope="col" class="col-sm-2"></th>
+                        <th scope="col" class="col-sm-2"></th>
                         <th scope="col" class="col-sm-1"><button type="button" class="btn btn-danger"><i
                                     class="fas fa-times"></i></button>
                             <button type="button" class="btn btn-danger"><i class="fas fa-edit"></i></button>

@@ -49,9 +49,9 @@
             <table class="table table-bordered bg-light">
                 <thead>
                     <tr>
-                        <th scope="col" class="col-sm-1">SL NO</th>
-                        <th scope="col">Subcategory</th>
-                        <th scope="col" class="col-sm-1">Action</th>
+                        <th scope="col" class="col-sm-1 text-center">SL NO</th>
+                        <th scope="col" class="text-center">Subcategory</th>
+                        <th scope="col" class="col-sm-1 text-center">Action</th>
                     </tr>
                 </thead>
                 <tbody>
