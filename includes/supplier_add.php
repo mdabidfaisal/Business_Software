@@ -39,10 +39,13 @@
         <div class="container">
             <div class="row row-cols-1 row-cols-md-3 g-4 p-3 justify-content-center">
                 <div class="col-md-4">
-                    <p class="form-label fs-2 fw-bolder font-monospace text-light text-center">ADD CATEGORY</p>
+                    <p class="form-label fs-2 fw-bolder font-monospace text-light text-center">ADD SUPPLIER</p>
                     <form action="">
+                        <label for="exampleDataList"
+                            class="form-label fs-6 fw-bolder font-monospace text-light">Supplier
+                            Name</label>
                         <input class="form-control" list="datalistOptions" id="exampleDataList"
-                            placeholder="Type to search...">
+                            placeholder="Type to search..." required>
                         <datalist id="datalistOptions">
                             <option value="">
                             <option value="">
@@ -50,6 +53,36 @@
                             <option value="">
                             <option value="">
                         </datalist>
+                        <label for="exampleDataList" class="form-label fs-6 fw-bolder font-monospace text-light">Contact
+                            Person</label>
+                        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="">
+                        <datalist id="datalistOptions">
+                            <option value="">
+                            <option value="">
+                            <option value="">
+                            <option value="">
+                            <option value="">
+                        </datalist>
+                        <label for="exampleDataList"
+                            class="form-label fs-6 fw-bolder font-monospace text-light">Mobile</label>
+                        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="" required>
+                        <datalist id="datalistOptions">
+                            <option value="">
+                            <option value="">
+                            <option value="">
+                            <option value="">
+                            <option value="">
+                        </datalist>
+                        <label for="exampleDataList"
+                            class="form-label fs-6 fw-bolder font-monospace text-light">Address</label>
+                        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="">
+                        <label for="exampleDataList"
+                            class="form-label fs-6 fw-bolder font-monospace text-light">Initial Balance(TK)</label>
+                        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="0.00&#2547" required>
+                        <select class="form-select col-sm-6 text-center font-monospace fw-bold text-primary" id="paid">
+                            <option value="cash" class="text-center font-monospace fw-bold">Payable</option>
+                            <option value="bKash" class="text-center font-monospace fw-bold">Receivable</option>
+                        </select>
                         <div class="row row-cols-1 row-cols-md-3 g-4 p-4 justify-content-end">
                             <div class="col-md-4 text-center">
                                 <button type="submit"
