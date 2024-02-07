@@ -25,7 +25,7 @@
                 </a>
                 <ul id="cate" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Add New</a>
+                        <a href="../includes/category_add.php" class="sidebar-link">Add New</a>
                     </li>
                     <li class="sidebar-item">
                         <a href="#" class="sidebar-link">View All</a>
@@ -42,7 +42,7 @@
                 </a>
                 <ul id="subc" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Add New</a>
+                        <a href="../includes/subcategory_add.php" class="sidebar-link">Add New</a>
                     </li>
                     <li class="sidebar-item">
                         <a href="#" class="sidebar-link">View All</a>
@@ -59,7 +59,7 @@
                 </a>
                 <ul id="brand" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Add New</a>
+                        <a href="../includes/brand_add.php" class="sidebar-link">Add New</a>
                     </li>
                     <li class="sidebar-item">
                         <a href="#" class="sidebar-link">View All</a>
@@ -76,7 +76,7 @@
                 </a>
                 <ul id="unit" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Add New</a>
+                        <a href="../includes/unit_add.php" class="sidebar-link">Add New</a>
                     </li>
                     <li class="sidebar-item">
                         <a href="#" class="sidebar-link">View All</a>
@@ -173,7 +173,7 @@
                 </a>
                 <ul id="Purchase" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                     <li class="sidebar-item">
-                        <a href="includes/sales.php" class="sidebar-link">New Purchase</a>
+                        <a href="../includes/sales.php" class="sidebar-link">New Purchase</a>
                     </li>
                     <li class="sidebar-item">
                         <a href="#" class="sidebar-link">All Purchase</a>
@@ -213,7 +213,7 @@
                 </a>
                 <ul id="sale" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                     <li class="sidebar-item">
-                        <a href="includes/sales.php" class="sidebar-link">New Sales</a>
+                        <a href="../includes/sales.php" class="sidebar-link">New Sales</a>
                     </li>
                     <li class="sidebar-item">
                         <a href="#" class="sidebar-link">All Sale</a>
