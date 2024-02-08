@@ -133,7 +133,7 @@
                 </a>
                 <ul id="Customer" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                 <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Client Type</a>
+                        <a href="../includes/client_add.php" class="sidebar-link">Client Type</a>
                     </li>
                     <li class="sidebar-item">
                         <a href="../includes/customer_add.php" class="sidebar-link">Add Customer</a>
