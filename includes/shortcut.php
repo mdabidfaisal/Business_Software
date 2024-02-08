@@ -1,6 +1,6 @@
  <!-- Shortcut Button Start -->
  <div class="container-fluid">
-     <div class="d-grid gap-2 d-md-flex justify-content-md-center p-3">
+     <div class="d-grid gap-2  d-md-flex justify-content-md-center p-3">
          <button class="btn shortcut-bg btn-inline-light " type="button">
              <a href="../includes/purchase.php" class="text-white">Purchase Menu</a>
          </button>

@@ -79,7 +79,7 @@
                         <a href="../includes/unit_add.php" class="sidebar-link">Add New</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="unit_view.php" class="sidebar-link">View All</a>
+                        <a href="../includes/unit_view.php" class="sidebar-link">View All</a>
                     </li>
                 </ul>
             </li>
@@ -93,10 +93,10 @@
                 </a>
                 <ul id="product" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                     <li class="sidebar-item">
-                        <a href="demo.php" class="sidebar-link">Add Product</a>
+                        <a href="../includes/product_add.php" class="sidebar-link">Add Product</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">All Product</a>
+                        <a href="../includes/product_view.php" class="sidebar-link">All Product</a>
                     </li>
                 </ul>
             </li>
@@ -113,7 +113,7 @@
                         <a href="../includes/supplier_add.php" class="sidebar-link">Add Supplier</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">All Supplier</a>
+                        <a href="../includes/supplier_view.php" class="sidebar-link">All Supplier</a>
                     </li>
                     <li class="sidebar-item">
                         <a href="#" class="sidebar-link">Add Transaction</a>
@@ -139,7 +139,7 @@
                         <a href="../includes/customer_add.php" class="sidebar-link">Add Customer</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">All Customer</a>
+                        <a href="../includes/customer_view.php" class="sidebar-link">All Customer</a>
                     </li>
                     <li class="sidebar-item">
                         <a href="#" class="sidebar-link">Add Transaction</a>
