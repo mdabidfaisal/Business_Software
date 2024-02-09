@@ -179,7 +179,7 @@
                         <a href="../includes/purchase.php" class="sidebar-link">New Purchase</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">All Purchase</a>
+                        <a href="../includes/view_purchase.php" class="sidebar-link">All Purchase</a>
                     </li>
                     <li class="sidebar-item">
                         <a href="#" class="sidebar-link">Add Pre-Order</a>

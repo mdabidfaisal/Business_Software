@@ -53,3 +53,27 @@ searchInput.addEventListener('input', function () {
         });
     });
 });
+// From and to date 
+document.addEventListener('DOMContentLoaded', function () {
+    // Initialize datepicker for from and to date
+    $('#fromDate, #toDate').datepicker({
+        format: 'yyyy-mm-dd',
+        autoclose: true
+    });
+
+    // Initialize the calendar
+    $('#calendar').datepicker({
+        format: 'yyyy-mm-dd',
+        autoclose: true,
+        todayHighlight: true
+    });
+
+    // Add event listener to search button
+    document.getElementById('searchBtn').addEventListener('click', function () {
+        var fromDate = document.getElementById('fromDate').value;
+        var toDate = document.getElementById('toDate').value;
+
+        // Perform search operation here using fromDate and toDate
+        alert('Searching events from ' + fromDate + ' to ' + toDate);
+    });
+});
