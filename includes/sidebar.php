@@ -219,7 +219,7 @@
                         <a href="../includes/sales.php" class="sidebar-link">New Sales</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">All Sale</a>
+                        <a href="../includes/view_sell.php" class="sidebar-link">All Sale</a>
                     </li>
                     <li class="sidebar-item">
                         <a href="#" class="sidebar-link">Item Wise Sale</a>

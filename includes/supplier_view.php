@@ -71,7 +71,7 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <th scope="col" class="col-sm-1"></th>
+                        <th scope="col"></th>
                         <th scope="col"></th>
                         <th scope="col"></th>
                         <th scope="col"></th>
@@ -81,6 +81,7 @@
                         <th scope="col" class="col-sm-1"><button type="button" class="btn btn-danger"><i
                                     class="fas fa-times"></i></button>
                             <button type="button" class="btn btn-danger"><i class="fas fa-edit"></i></button>
+                            <button type="button" class="btn btn-danger"><i class="fas fa-eye"></i></button>
                         </th>
                     </tr>
 
