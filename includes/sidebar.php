@@ -116,7 +116,7 @@
                         <a href="../includes/supplier_view.php" class="sidebar-link">All Supplier</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Add Transaction</a>
+                        <a href="../includes/supplier_transaction.php" class="sidebar-link">Add Transaction</a>
                     </li>
                     <li class="sidebar-item">
                         <a href="#" class="sidebar-link">All Transaction</a>
