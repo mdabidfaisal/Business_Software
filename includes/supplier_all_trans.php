@@ -37,36 +37,21 @@
         <!-- shortcut end -->
         <!-- Form Start -->
         <div class="container-fluid">
-            <p class="text-center font-monospace fs-3 fw-bolder text-light">All Purchase</p>
+            <p class="text-center font-monospace fs-3 fw-bolder text-light">Supplier All Transaction</p>
         </div>
         <div class="container-fluid">
             <div class="row new-row-1">
                 <div class="col-md-3 pt-3">
-                    <input class="form-control" type="text" value="Voucher No." aria-label="readonly input example">
-                </div>
-                <div class="col-md-3 pt-3">
-                    <select class="form-select" aria-label="Default select example">
-                        <option selected>Select Supplier Name</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                    </select>
-                </div>
-                <div class="col-md-3 pt-3">
-                    <select class="form-select" aria-label="Default select example">
-                        <option selected>Select Category</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                    </select>
-                </div>
-                <div class="col-md-3 pt-3">
-                    <select class="form-select" aria-label="Default select example">
-                        <option selected>Select Product</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                    </select>
+                    <form action="">
+                        <label for="exampleDataList" class="form-label fs-5 text-light fw-semibold font-monospace">
+                            Select Supplier</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Select Supplier</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </form>
                 </div>
                 <!-- From To Calender Search Start -->
                 <div class="col-md-3">
@@ -84,12 +69,10 @@
                             <input type="date" id="date" name="date">
                             <button type="submit" class="btn btn-light text-primary btn-outline-danger">Show</button>
                         </form>
+
                     </div>
                 </div>
                 <!-- From To Calender Search End -->
-
-
-
             </div>
         </div>
         <div class="container-fluid pt-3">
@@ -99,12 +82,12 @@
                         <tr>
                             <th scope="col">SL NO</th>
                             <th scope="col">Date</th>
-                            <th scope="col">Voucher No</th>
-                            <th scope="col">Supplier Name</th>
-                            <th scope="col">Mobile</th>
-                            <th scope="col">Total (Tk)</th>
-                            <th scope="col">Paid (Tk)</th>
-                            <th scope="col">Due(Tk)</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Transaction Method</th>
+                            <th scope="col">Paid</th>
+                            <th scope="col">Receive</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Username</th>
                             <th scope="col">Action</th>
                         </tr>
                     </thead>
@@ -128,7 +111,6 @@
                     </tbody>
                 </table>
             </div>
-
 
         </div>
 

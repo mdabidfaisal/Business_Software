@@ -98,8 +98,8 @@
                         <form>
                             <label for="dateto" class="form-label  text-light fw-semibold font-monospace">To</label>
                             <input type="date" id="date" name="date">
+                            <button type="submit" class="btn btn-light text-primary btn-outline-danger">Show</button>
                         </form>
-                        <button type="submit" class="btn btn-light text-primary btn-outline-danger">Show</button>
                     </div>
                 </div>
                 <!-- From To Calender Search End -->
