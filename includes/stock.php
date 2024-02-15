@@ -42,9 +42,6 @@
         <div class="container-fluid">
             <div class="row new-row-1">
                 <div class="col-md-3 pt-3">
-                    <input class="form-control" type="text" value="Voucher No." aria-label="readonly input example">
-                </div>
-                <div class="col-md-3 pt-3">
                     <select class="form-select" aria-label="Default select example">
                         <option selected>Select Name</option>
                         <option value="1">One</option>
