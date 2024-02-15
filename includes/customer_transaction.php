@@ -39,7 +39,7 @@
         <div class="container">
             <div class="row row-cols-1 row-cols-md-3 g-4 p-3 justify-content-center">
                 <div class="col-md-4">
-                    <p class="form-label fs-2 fw-bolder font-monospace text-light text-center">ADD TRANSACTION</p>
+                    <p class="form-label fs-2 fw-bolder font-monospace text-light text-center">Customer Transaction</p>
                     <form action="">
                         <div class="calendar-container">
                             <form>
@@ -47,7 +47,14 @@
                             </form>
                         </div>
                         <label for="exampleDataList"
-                            class="form-label fs-6 fw-bolder font-monospace text-light">Supplier Name
+                            class="form-label fs-6 fw-bolder font-monospace text-light">Customer Type
+                        </label>
+                        <select class="form-select col-sm-6 text-center font-monospace fw-bold text-primary" id="cust2">
+                            <option value="1" class="text-center font-monospace fw-bold">Select Customer Type</option>
+                            <option value="2" class="text-center font-monospace fw-bold">2</option>
+                        </select>
+                        <label for="exampleDataList"
+                            class="form-label fs-6 fw-bolder font-monospace text-light">Customer Name
                         </label>
                         <select class="form-select col-sm-6 text-center font-monospace fw-bold text-primary" id="paid">
                             <option value="cash" class="text-center font-monospace fw-bold">ABC</option>
@@ -85,7 +92,7 @@
                                 <option value="">Select</option>
                                 <option value="cash">Cash</option>
                                 <option value="bank">Bank</option>
-                                <option value="commission">Commission</option>
+                                <option value="commission">Advance</option>
                                 <!-- Add other options here if needed -->
                             </select>
                         </div>

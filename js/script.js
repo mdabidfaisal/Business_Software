@@ -77,3 +77,4 @@ document.addEventListener('DOMContentLoaded', function () {
         alert('Searching events from ' + fromDate + ' to ' + toDate);
     });
 });
+

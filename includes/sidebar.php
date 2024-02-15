@@ -142,7 +142,7 @@
                         <a href="../includes/customer_view.php" class="sidebar-link">All Customer</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Add Transaction</a>
+                        <a href="../includes/customer_transaction.php" class="sidebar-link">Add Transaction</a>
                     </li>
                     <li class="sidebar-item">
                         <a href="#" class="sidebar-link">All Transaction</a>
@@ -201,7 +201,7 @@
             <!-- Purchase End -->
             <!-- Stock Start -->
             <li class="sidebar-item">
-                <a href="#" class="sidebar-link">
+                <a href="../includes/stock.php" class="sidebar-link">
                     <i class="lni lni-database"></i>
                     <span>Stock</span>
                 </a>
