@@ -145,7 +145,7 @@
                         <a href="../includes/customer_transaction.php" class="sidebar-link">Add Transaction</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">All Transaction</a>
+                        <a href="../includes/customer_all_trans.php" class="sidebar-link">All Transaction</a>
                     </li>
                 </ul>
             </li>

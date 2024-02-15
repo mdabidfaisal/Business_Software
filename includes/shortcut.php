@@ -5,16 +5,16 @@
              <a href="../includes/purchase.php" class="text-white">Purchase Menu</a>
          </button>
          <button class="btn shortcut-bg btn-inline-primary" type="button">
-             <a href="#" class="text-white">Supplier Payment</a>
+             <a href="../includes/supplier_transaction.php" class="text-white">Supplier Payment</a>
          </button>
          <button class="btn shortcut-bg btn-inline-primary" type="button">
-             <a href="#" class="text-white">Stock Menu</a>
+             <a href="../includes/stock.php" class="text-white">Stock Menu</a>
          </button>
          <button class="btn shortcut-bg btn-inline-primary" type="button">
              <a href="../includes/sales.php" class="text-white">Sales Menu</a>
          </button>
          <button class="btn shortcut-bg btn-inline-primary" type="button">
-             <a href="#" class="text-white">Customer Collection</a>
+             <a href="../includes/customer_transaction.php" class="text-white">Customer Collection</a>
          </button>
          <button class="btn shortcut-bg btn-inline-primary" type="button">
              <a href="#" class="text-white">Expenditure</a>
