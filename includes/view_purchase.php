@@ -93,40 +93,43 @@
             </div>
         </div>
         <div class="container-fluid pt-3">
+            <div class="table-responsive">
+                <table class="table table-bordered bg-light">
+                    <thead>
+                        <tr>
+                            <th scope="col">SL NO</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Voucher No</th>
+                            <th scope="col">Supplier Name</th>
+                            <th scope="col">Mobile</th>
+                            <th scope="col">Total (Tk)</th>
+                            <th scope="col">Paid (Tk)</th>
+                            <th scope="col">Due(Tk)</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col" class="col-sm-1"><button type="button" class="btn btn-danger"><i
+                                        class="fas fa-times"></i></button>
+                                <button type="button" class="btn btn-danger"><i class="fas fa-edit"></i></button>
+                                <button type="button" class="btn btn-danger"><i class="fas fa-eye"></i></button>
+                            </th>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+            </div>
 
-            <table class="table table-bordered bg-light">
-                <thead>
-                    <tr>
-                        <th scope="col">SL NO</th>
-                        <th scope="col">Date</th>
-                        <th scope="col">Voucher No</th>
-                        <th scope="col">Supplier Name</th>
-                        <th scope="col">Mobile</th>
-                        <th scope="col">Total (Tk)</th>
-                        <th scope="col">Paid (Tk)</th>
-                        <th scope="col">Due(Tk)</th>
-                        <th scope="col">Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                        <th scope="col" class="col-sm-1"><button type="button" class="btn btn-danger"><i
-                                    class="fas fa-times"></i></button>
-                            <button type="button" class="btn btn-danger"><i class="fas fa-edit"></i></button>
-                            <button type="button" class="btn btn-danger"><i class="fas fa-eye"></i></button>
-                        </th>
-                    </tr>
-                    <!-- Add more rows as needed -->
-                </tbody>
-            </table>
+
         </div>
 
         <!-- Form End -->

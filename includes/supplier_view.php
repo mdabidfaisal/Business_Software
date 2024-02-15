@@ -55,39 +55,42 @@
             </div>
         </div>
         <div class="container-fluid pt-3">
+            <div class="table-responsive">
+                <table class="table table-bordered bg-light">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="col-sm-1 text-center ">SL NO</th>
+                            <th scope="col" class="col-sm-3 text-center">Name</th>
+                            <th scope="col" class="text-center">Contact Person</th>
+                            <th scope="col" class="text-center">Mobile</th>
+                            <th scope="col" class="text-center">Receivable</th>
+                            <th scope="col" class="text-center">Payable</th>
+                            <th scope="col" class="text-center">Status</th>
+                            <th scope="col" class="col-sm-1 text-center">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col" class="col-sm-1"><button type="button" class="btn btn-danger"><i
+                                        class="fas fa-times"></i></button>
+                                <button type="button" class="btn btn-danger"><i class="fas fa-edit"></i></button>
+                                <button type="button" class="btn btn-danger"><i class="fas fa-eye"></i></button>
+                            </th>
+                        </tr>
 
-            <table class="table table-bordered bg-light">
-                <thead>
-                    <tr>
-                        <th scope="col" class="col-sm-1 text-center ">SL NO</th>
-                        <th scope="col" class="col-sm-3 text-center">Name</th>
-                        <th scope="col" class="text-center">Contact Person</th>
-                        <th scope="col" class="text-center">Mobile</th>
-                        <th scope="col" class="text-center">Receivable</th>
-                        <th scope="col" class="text-center">Payable</th>
-                        <th scope="col" class="text-center">Status</th>
-                        <th scope="col" class="col-sm-1 text-center">Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                        <th scope="col" class="col-sm-1"><button type="button" class="btn btn-danger"><i
-                                    class="fas fa-times"></i></button>
-                            <button type="button" class="btn btn-danger"><i class="fas fa-edit"></i></button>
-                            <button type="button" class="btn btn-danger"><i class="fas fa-eye"></i></button>
-                        </th>
-                    </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+            </div>
 
-                    <!-- Add more rows as needed -->
-                </tbody>
-            </table>
+
         </div>
     </div>
     <!-- Main Body End -->

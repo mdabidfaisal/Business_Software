@@ -45,44 +45,46 @@
         ?>
         <!-- search end -->
         <div class="container-fluid pt-3">
+            <div class="table-responsive">
+                <table class="table table-bordered bg-light">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="col-sm-1 text-center ">SL NO</th>
+                            <th scope="col" class="col-sm-3 text-center">Name</th>
+                            <th scope="col" class="text-center">Category</th>
+                            <th scope="col" class="text-center">Subcategory</th>
+                            <th scope="col" class="text-center">Brand</th>
+                            <th scope="col" class="text-center">Purchase Price</th>
+                            <th scope="col" class="text-center">Sell Price</th>
+                            <th scope="col" class="text-center">Status</th>
+                            <th scope="col" class="text-center">Unit Label</th>
+                            <th scope="col" class="text-center">Unit Relation</th>
+                            <th scope="col" class="col-sm-1 text-center">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="col" class="col-sm-1"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col" class="col-sm-1"><button type="button" class="btn btn-danger"><i
+                                        class="fas fa-times"></i></button>
+                                <button type="button" class="btn btn-danger"><i class="fas fa-edit"></i></button>
+                            </th>
+                        </tr>
 
-            <table class="table table-bordered bg-light">
-                <thead>
-                    <tr>
-                        <th scope="col" class="col-sm-1 text-center ">SL NO</th>
-                        <th scope="col" class="col-sm-3 text-center">Name</th>
-                        <th scope="col" class="text-center">Category</th>
-                        <th scope="col" class="text-center">Subcategory</th>
-                        <th scope="col" class="text-center">Brand</th>
-                        <th scope="col" class="text-center">Purchase Price</th>
-                        <th scope="col" class="text-center">Sell Price</th>
-                        <th scope="col" class="text-center">Status</th>
-                        <th scope="col" class="text-center">Unit Label</th>
-                        <th scope="col" class="text-center">Unit Relation</th>
-                        <th scope="col" class="col-sm-1 text-center">Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="col" class="col-sm-1"></th>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                        <th scope="col" class="col-sm-1"><button type="button" class="btn btn-danger"><i
-                                    class="fas fa-times"></i></button>
-                            <button type="button" class="btn btn-danger"><i class="fas fa-edit"></i></button>
-                        </th>
-                    </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+            </div>
 
-                    <!-- Add more rows as needed -->
-                </tbody>
-            </table>
         </div>
     </div>
     <!-- Main Body End -->

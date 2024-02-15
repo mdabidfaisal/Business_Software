@@ -72,40 +72,42 @@
             </div>
         </div>
         <div class="container-fluid pt-3">
+            <div class="table-responsive">
+                <table class="table table-bordered bg-light">
+                    <thead>
+                        <tr>
+                            <th scope="col">SL NO</th>
+                            <th scope="col">Product Name</th>
+                            <th scope="col">Stock</th>
+                            <th scope="col">Sale Quantity</th>
+                            <th scope="col">Sales Price</th>
+                            <th scope="col">Price Type</th>
+                            <th scope="col">Dis.(%)</th>
+                            <th scope="col">Discount</th>
+                            <th scope="col">Total</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"><button type="button" class="btn btn-danger"><i
+                                        class="fas fa-times"></i></button></th>
+                        </tr>
 
-            <table class="table table-bordered bg-light">
-                <thead>
-                    <tr>
-                        <th scope="col">SL NO</th>
-                        <th scope="col">Product Name</th>
-                        <th scope="col">Stock</th>
-                        <th scope="col">Sale Quantity</th>
-                        <th scope="col">Sales Price</th>
-                        <th scope="col">Price Type</th>
-                        <th scope="col">Dis.(%)</th>
-                        <th scope="col">Discount</th>
-                        <th scope="col">Total</th>
-                        <th scope="col">Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                        <th scope="col"><button type="button" class="btn btn-danger"><i
-                                    class="fas fa-times"></i></button></th>
-                    </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+            </div>
 
-                    <!-- Add more rows as needed -->
-                </tbody>
-            </table>
         </div>
         <div class="container">
             <div class="form-group">

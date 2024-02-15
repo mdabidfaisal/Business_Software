@@ -77,44 +77,46 @@
             </div>
         </div>
         <div class="container-fluid pt-3">
+            <div class="table-responsive">
+                <table class="table  table-bordered bg-light table-striped-columns">
+                    <thead>
+                        <tr>
+                            <th scope="col">SL NO</th>
+                            <th scope="col">Product</th>
+                            <th scope="col">Category</th>
+                            <th scope="col">Sub-Category</th>
+                            <th scope="col">Brand</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">Detail Stock</th>
+                            <th scope="col">Purchase Price AVG</th>
+                            <th scope="col">Last Purchase Price</th>
+                            <th scope="col">Sell Price</th>
+                            <th scope="col">Purchase Amount LPP</th>
+                            <th scope="col">Purchase Avg</th>
+                            <th scope="col">Sell Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+            </div>
 
-            <table class="table table-bordered bg-light">
-                <thead>
-                    <tr>
-                        <th scope="col">SL NO</th>
-                        <th scope="col">Product</th>
-                        <th scope="col">Category</th>
-                        <th scope="col">Sub-Category</th>
-                        <th scope="col">Brand</th>
-                        <th scope="col">Quantity</th>
-                        <th scope="col">Detail Stock</th>
-                        <th scope="col">Purchase Price AVG</th>
-                        <th scope="col">Last Purchase Price</th>
-                        <th scope="col">Sell Price</th>
-                        <th scope="col">Purchase Amount LPP</th>
-                        <th scope="col">Purchase Avg</th>
-                        <th scope="col">Sell Amount</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                    </tr>
-                    <!-- Add more rows as needed -->
-                </tbody>
-            </table>
         </div>
         <!-- Form End -->
     </div>
