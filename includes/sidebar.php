@@ -191,10 +191,10 @@
                         <a href="#" class="sidebar-link">Item Wise</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Add Purchase Return</a>
+                        <a href="../includes/purchase_return.php" class="sidebar-link">Add Purchase Return</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">All Purchase Return</a>
+                        <a href="../includes/view_purchase_return.php" class="sidebar-link">All Purchase Return</a>
                     </li>
                 </ul>
             </li>
@@ -228,10 +228,10 @@
                         <a href="#" class="sidebar-link">Client Wise Sale</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Sale Return</a>
+                        <a href="../includes/sale_return.php" class="sidebar-link">Sale Return</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Add Sale Return</a>
+                        <a href="../includes/view_sale_return.php" class="sidebar-link">All Sale Return</a>
                     </li>
                 </ul>
             </li>
