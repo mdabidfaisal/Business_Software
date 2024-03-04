@@ -274,7 +274,7 @@
                         <a href="../includes/credit_due.php" class="sidebar-link">Credit Due</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Supplier Due</a>
+                        <a href="../includes/supplier_due.php" class="sidebar-link">Supplier Due</a>
                     </li>
                 </ul>
             </li>
@@ -360,10 +360,10 @@
                 </a>
                 <ul id="Report" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Purchase Report</a>
+                        <a href="../includes/purchase_report.php" class="sidebar-link">Purchase Report</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Sales Report</a>
+                        <a href="../includes/sale_report.php" class="sidebar-link">Sales Report</a>
                     </li>
                     <li class="sidebar-item">
                         <a href="#" class="sidebar-link">Cost Report</a>
