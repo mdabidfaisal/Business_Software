@@ -343,10 +343,10 @@
                 </a>
                 <ul id="Ledger" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Supplier Ledger</a>
+                        <a href="../includes/supplier_ledger.php" class="sidebar-link">Supplier Ledger</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Customer Ledger</a>
+                        <a href="../includes/customer_ledger.php" class="sidebar-link">Customer Ledger</a>
                     </li>
                 </ul>
             </li>
@@ -369,7 +369,7 @@
                         <a href="#" class="sidebar-link">Cost Report</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Profit/Loss Report</a>
+                        <a href="../includes/profit_loss.php" class="sidebar-link">Profit/Loss Report</a>
                     </li>
                     <li class="sidebar-item">
                         <a href="#" class="sidebar-link">Cash Book</a>
