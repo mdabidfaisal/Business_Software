@@ -268,10 +268,10 @@
                 </a>
                 <ul id="Due" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Cash Due</a>
+                        <a href="../includes/cash_due.php" class="sidebar-link">Cash Due</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Credit Due</a>
+                        <a href="../includes/credit_due.php" class="sidebar-link">Credit Due</a>
                     </li>
                     <li class="sidebar-item">
                         <a href="#" class="sidebar-link">Supplier Due</a>
