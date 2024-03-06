@@ -159,7 +159,7 @@
                 </a>
                 <ul id="pr" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Add New</a>
+                        <a href="../includes/payment_reminder.php" class="sidebar-link">Add New</a>
                     </li>
                     <li class="sidebar-item">
                         <a href="#" class="sidebar-link">View All</a>
