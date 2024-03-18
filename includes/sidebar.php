@@ -76,7 +76,7 @@
                 </a>
                 <ul id="unit" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                     <li class="sidebar-item">
-                        <a href="../includes/backend.php" class="sidebar-link">Add New</a>
+                        <a href="../includes/unit_add.php" class="sidebar-link">Add New</a>
                     </li>
                     <li class="sidebar-item">
                         <a href="../includes/unit_view.php" class="sidebar-link">View All</a>

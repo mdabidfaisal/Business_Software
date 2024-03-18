@@ -43,7 +43,7 @@
                     <form action="">
                         <label for="exampleDataList" class="form-label fs-6 fw-bolder font-monospace text-light">Unit
                             Name</label>
-                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                        <input class="form-control" list="datalistOptions" id="exampleDataList" type="text" name="unit_name"
                             placeholder="Type to search..." required>
                         <datalist id="datalistOptions">
                             <option value="">
@@ -54,7 +54,7 @@
                         </datalist>
                         <label for="exampleDataList" class="form-label fs-6 fw-bolder font-monospace text-light">Unit
                             Label</label>
-                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                        <input class="form-control" list="datalistOptions" id="exampleDataList" type="text" name="unit_label"
                             placeholder="Example: Ton/Kg" required>
                         <datalist id="datalistOptions">
                             <option value="">
@@ -65,7 +65,7 @@
                         </datalist>
                         <label for="exampleDataList"
                             class="form-label fs-6 fw-bolder font-monospace text-light">Relation</label>
-                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                        <input class="form-control" list="datalistOptions" id="exampleDataList" type="math" name="unit_relation"
                             placeholder="Example: 1/1000" required>
                         <datalist id="datalistOptions">
                             <option value="">
@@ -88,6 +88,11 @@
                 </div>
             </div>
         </div>
+        <?php
+
+            echo "{$_POST["unit_name"]} <br>";
+            echo "{$_POST["unit_label"]} <br>";
+        ?>
         <!-- Form End -->
 
     </div>
