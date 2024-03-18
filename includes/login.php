@@ -25,7 +25,7 @@
                         <p class="text-center font-monospace fs-3 fw-bold">Business Software</p>
                     </div>
                     <div class="card-body">
-                        <form>
+                        <form action="login.php" method="post">
                             <div class="mb-3">
                                 <label for="username" class="form-label">Username</label>
                                 <input type="text" class="form-control" id="username" name="username" required>
@@ -45,6 +45,10 @@
             </div>
         </div>
     </div>
+    <?php
+        echo "{$_POST["username"]} <br>";
+        echo "{$_POST["password"]} <br>";
+    ?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">

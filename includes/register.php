@@ -16,7 +16,6 @@
 </head>
 
 <body>
-    <!-- sidebar start -->
     <?php
     include("../includes/sidebar.php");
     ?>
@@ -46,7 +45,7 @@
                             <div class="d-flex justify-content-start">
                                 <div class="btn btn-primary btn-rounded">
                                     <label class="form-label text-white m-1" for="customFile1">Choose file</label>
-                                    <input type="file" class="form-control d-none" id="customFile1"
+                                    <input type="file" class="form-control d-none" id="customFile1" name="image"
                                         onchange="displaySelectedImage(event, 'selectedImage')" />
                                 </div>
                             </div>
@@ -56,65 +55,84 @@
             </div>
         </div>
         <div class="container">
-            <div class="row row-cols-1 row-cols-md-3 g-4 p-3">
-                <div class="col">
-                    <div class="mb-3">
-                        <label for="formGroupExampleInput" class="form-label text-white">Full Name</label>
-                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Full Name">
+            <form action="register.php" method="post">
+                <div class="row row-cols-1 row-cols-md-3 g-4 p-3">
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput" class="form-label text-white">Full Name</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput" name="fullname"
+                                placeholder="Full Name">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput" class="form-label text-white">Mobile Number</label>
+                            <input type="number" class="form-control" id="formGroupExampleInput" name="mobile"
+                                placeholder="Mobile Number">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput" class="form-label text-white">Email</label>
+                            <input type="mail" class="form-control" id="formGroupExampleInput" name="mail"  
+                                placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput" class="form-label text-white">Username</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput" name="username" 
+                                placeholder="Username">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput" class="form-label text-white">Password</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput" name="password" 
+                                placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput" class="form-label text-white">Confirm Password</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput" name="cpassword"
+                                placeholder="Confirm Password">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label for="formGroupExampleInput2" class="form-label text-white">Outlet</label>
+                        <select class="form-select" aria-label="Default select example" name="outlet">
+                            <option selected>Open this select menu</option>
+                            <option value="1">Showroom One</option>
+                            <option value="2">Showroom Two</option>
+                            <option value="3">Showroom Three</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label for="formGroupExampleInput2" class="form-label text-white">Role Setting</label>
+                        <select class="form-select" aria-label="Default select example" name="role">
+                            <option selected>Open this select menu</option>
+                            <option value="1">Admin</option>
+                            <option value="2">User</option>
+                        </select>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="mb-3">
-                        <label for="formGroupExampleInput" class="form-label text-white">Mobile Number</label>
-                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Mobile Number">
-                    </div>
+                <div class="container p-3">
+                    <button type="submit" class="btn btn-primary btn-rounded">Submit</button>
                 </div>
-                <div class="col">
-                    <div class="mb-3">
-                        <label for="formGroupExampleInput" class="form-label text-white">Email</label>
-                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Email">
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="mb-3">
-                        <label for="formGroupExampleInput" class="form-label text-white">Username</label>
-                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Username">
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="mb-3">
-                        <label for="formGroupExampleInput" class="form-label text-white">Password</label>
-                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Password">
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="mb-3">
-                        <label for="formGroupExampleInput" class="form-label text-white">Confirm Password</label>
-                        <input type="text" class="form-control" id="formGroupExampleInput"
-                            placeholder="Confirm Password">
-                    </div>
-                </div>
-                <div class="col">
-                    <label for="formGroupExampleInput2" class="form-label text-white">Outlet</label>
-                    <select class="form-select" aria-label="Default select example">
-                        <option selected>Open this select menu</option>
-                        <option value="1">Showroom One</option>
-                        <option value="2">Showroom Two</option>
-                        <option value="3">Showroom Three</option>
-                    </select>
-                </div>
-                <div class="col">
-                    <label for="formGroupExampleInput2" class="form-label text-white">Role Setting</label>
-                    <select class="form-select" aria-label="Default select example">
-                        <option selected>Open this select menu</option>
-                        <option value="1">Admin</option>
-                        <option value="2">User</option>
-                    </select>
-                </div>
-            </div>
-            <div class="container p-3">
-                <button type="submit" class="btn btn-primary btn-rounded">Submit</button>
-            </div>
+            </form>
+            <?php
+                echo "{$_POST["image"]} <br>";
+                echo "{$_POST["fullname"]} <br>";
+                echo "{$_POST["mobile"]} <br>";
+                echo "{$_POST["mail"]} <br>";
+                echo "{$_POST["username"]} <br>";
+                echo "{$_POST["password"]} <br>";
+                echo "{$_POST["cpassword"]} <br>";
+                echo "{$_POST["outlet"]} <br>";
+                echo "{$_POST["role"]} <br>";
+            ?>
+
             <!-- Form End -->
 
         </div>
