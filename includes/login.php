@@ -46,31 +46,33 @@
         </div>
     </div>
     <?php
-    // Database connection
-        $servername = "localhost:3308";
-        $username = "root";
-        $password = "";
-        $dbname = "database";
+            // Database connection
+            $servername = "localhost:3308";
+            $username = "root";
+            $password = "";
+            $dbname = "database";
 
-        $conn = new mysqli($servername, $username, $password, $dbname);
+            $conn = new mysqli($servername, $username, $password, $dbname);
 
-        // Check connection
-        if ($conn->connect_error) {
-            die("Connection failed: " . $conn->connect_error);
-        }
-        echo "{$_POST["username"]} <br>";
-        echo "{$_POST["password"]} <br>";
-        // Save data to database
-        $sql = "INSERT INTO units (name, label, relation) VALUES ('$username', '$password')";
+            // Check connection
+            if ($conn->connect_error) {
+                die("Connection failed: " . $conn->connect_error);
+            }
 
-        if ($conn->query($sql) === TRUE) {
-            echo "Unit saved successfully!";
-        } else {
-            echo "Error: " . $sql . "<br>" . $conn->error;
-        }
-        
-        $conn->close();
+            // Retrieve data from AJAX request
+            $username = $_POST['username'];
+            $password = $_POST['password'];
 
+            // Save data to database
+            $sql = "INSERT INTO user (username, password) VALUES ('$username', '$password')";
+
+            if ($conn->query($sql) === TRUE) {
+                echo "Login saved successfully!";
+            } else {
+                echo "Error: " . $sql . "<br>" . $conn->error;
+            }
+
+            $conn->close();
     ?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"

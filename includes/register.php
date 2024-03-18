@@ -122,15 +122,41 @@
                 </div>
             </form>
             <?php
-                echo "{$_POST["image"]} <br>";
-                echo "{$_POST["fullname"]} <br>";
-                echo "{$_POST["mobile"]} <br>";
-                echo "{$_POST["mail"]} <br>";
-                echo "{$_POST["username"]} <br>";
-                echo "{$_POST["password"]} <br>";
-                echo "{$_POST["cpassword"]} <br>";
-                echo "{$_POST["outlet"]} <br>";
-                echo "{$_POST["role"]} <br>";
+            // Database connection
+                $servername = "localhost:3308";
+                $username = "root";
+                $password = "";
+                $dbname = "database";
+
+                $conn = new mysqli($servername, $username, $password, $dbname);
+
+                // Check connection
+                if ($conn->connect_error) {
+                    die("Connection failed: " . $conn->connect_error);
+                }
+
+                // Retrieve data from AJAX request
+                $image = $_POST['image'];
+                $fullname = $_POST['fullname'];
+                $mobile = $_POST['mobile'];
+                $mail = $_POST['mail'];
+                $username = $_POST['username'];
+                $password = $_POST['password'];
+                $cpassword = $_POST['cpassword'];
+                $outlet = $_POST['outlet'];
+                $role = $_POST['role'];
+                
+
+                // Save data to database
+                $sql = "INSERT INTO registration (image, fullname,mobile,mail,username,password,cpassword,outlet,role) VALUES ('$image', '$fullname', '$mobile', '$mail', '$username', '$password', '$cpassword', '$outlet', '$role')";
+
+                if ($conn->query($sql) === TRUE) {
+                    echo "Database saved successfully!";
+                } else {
+                    echo "Error: " . $sql . "<br>" . $conn->error;
+                }
+
+                $conn->close();
             ?>
 
             <!-- Form End -->
